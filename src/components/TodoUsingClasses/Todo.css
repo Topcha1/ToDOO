@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  position: relative;
+  background-color: #383e56;
+  margin: 25vh auto;
+  height: 60vh;
+  width: 40vw;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #9fb8ad;
+  height: 40px;
+  width: 30vw;
+  font-size: 1.2rem;
+  color: #c5d7bd;
+}
+.todo-input::placeholder {
+  font-size: 1.1rem;
+  padding: 10px;
+  font-style: italic;
+}
+.todo-input:focus,
+.submit:focus,
+.btn:focus,
+.edit-input {
+  outline: none;
+}
+
+.submit {
+  background: none;
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.submit:hover {
+  transform: scale(1.1);
+}
+.todo {
+  height: 350px;
+  width: 95%;
+  margin: 0px auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul li {
+  margin: 30px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9fb8ad;
+}
+ul li span {
+  font-size: 1.2rem;
+  padding: 5px;
+  color: #fff;
+}
+.edit-input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.btn {
+  background: none;
+  font-size: 1.1rem;
+  border: none;
+  color: #ffff;
+  padding: 5px;
+  cursor: pointer;
+}
+.clear-buttons {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.clear-button {
+  font-size: 1.1rem;
+  background: none;
+  padding: 10px;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+}
+.checked {
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+}
